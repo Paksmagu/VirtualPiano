@@ -8,7 +8,7 @@ CREATE TABLE `Donators`
 (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(255) NOT NULL,
-	`email` VARCHAR(255) NOT NULL,
+	`email` VARCHAR(255) NULL,
 	`noteId` INT NULL DEFAULT NULL,
 	`donationAmount` INT NOT NULL,
 	`donationText` TEXT NULL DEFAULT NULL,
