@@ -2,9 +2,10 @@
 ## SQL
 Inside the SQL folder there are isntall SQL scriptes for the database.
 
-CreateTables.sql is you generic, create table there will be 2 tables created, 1 for notes 2nd for donators (buyers).
+CreateTables.sql is you generic, create table there will be 2 tables created, 1 for notes 2nd for donators (buyers). There exists an automatic trigger on notes table to calculate currentPrice.
 
-PopulateNotes.sql contains the populate data for Notes table. This is where the note prices will be stored and if it's possible to buy a note. There exists an automatic trigger on this table to calculate currentPrice.
+PopulateNotes.sql contains the populate data for Notes table. This is where the note prices will be stored and if it's possible to buy a note. This file contains subtext letters (♭₂) so it's needed to use proper encoding when opening / inserting this sql file.
+
 
 AlreadyBoughtNoteOwners.sql populates Donators who have already bought notes.
 
