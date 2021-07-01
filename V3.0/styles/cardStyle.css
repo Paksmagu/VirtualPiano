@@ -1,0 +1,80 @@
+#donators {
+	width: 100%;
+	height: 200px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.donator-stack {
+    margin: 0;
+	height: 200px;
+	position: relative;
+}
+
+.donator-card {
+	background-color: white;
+	width: 90%;
+    max-width: 50%;
+	min-height: 40px;
+	max-height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 2rem;
+	box-shadow: 0 5px 10px 0 #00000040, 0 15px 20px 0 #00000020;
+	transition: transform 200ms;
+}
+.donator-name {
+	padding-left: 2em;
+}
+
+.text-concat {
+    font-size: 14px;
+    color: black;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    line-height: 1.2em;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.donator-card:nth-last-child(1) {
+	--y: calc(-50% + 15px);
+	transform: translate(-50%, var(--y)) scale(1.05);
+}
+
+.donator-card:nth-last-child(2) {
+	--y: calc(-50%);
+	transform: translate(-50%, var(--y)) scale(1);
+}
+
+.donator-card:nth-last-child(3) {
+	--y: calc(-50% - 15px);
+	transform: translate(-50%, var(--y)) scale(0.95);
+}
+
+.donator-card:nth-last-child(n+4) {
+	--y: calc(-50% - 30px);
+	transform: translate(-50%, var(--y)) scale(0.9);
+	box-shadow: 0 0 1px 1px #00000003;
+}
+
+@keyframes swapCards {
+	50% {
+		transform: translate(-50%, calc(var(--y) - 100px)) scale(0.85) rotate(-5deg);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+		z-index: -1;
+	}
+}
+
+#donateButtonDiv {
+	display: flex;
+	justify-content: center;
+}
