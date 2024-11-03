@@ -1,7 +1,7 @@
 <?php
 class Database {
     private string $host = "localhost";
-    private string $dbName = "virtualPiano";
+    private string $dbName = "test";
     private string $username = "paksmagu";
     private string $password = "onlineResentfulTK1234";
     private string $charSet = "utf8";

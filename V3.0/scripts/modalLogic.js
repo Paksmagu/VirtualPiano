@@ -48,9 +48,9 @@ class ModalLogic {
             let url;
             // TODO: FIX STATIC IP ADDRESS
             if (self === buyLogic) {
-                url = "http://resentful.tk/V3.0/api/buyNote.php"
+                url = "https://resentful.eu/V3.0/api/buyNote.php"
             } else {
-                url = "http://resentful.tk/V3.0/api/donateToPiano.php"
+                url = "https://resentful.eu/V3.0/api/donateToPiano.php"
             }
             self.executeForm(url);
             self.modal.style.display = "none";

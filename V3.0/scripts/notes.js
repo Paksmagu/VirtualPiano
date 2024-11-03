@@ -23,7 +23,7 @@ class Notes {
             }
         };
         //TODO: Change the static IP Address.
-        xhttp.open("GET", "http://resentful.tk/V3.0/api/getAllNotes.php", false);
+        xhttp.open("GET", "https://resentful.eu/V3.0/api/getAllNotes.php", false);
         xhttp.send();
     }
 
@@ -77,7 +77,7 @@ class Notes {
             }
         }
         //TODO: Fix static IP
-        xhttp.open("GET", "http://resentful.tk/V3.0/api/getNoteOwners.php?id=" + encodeURIComponent(note), true);
+        xhttp.open("GET", "https://resentful.eu/V3.0/api/getNoteOwners.php?id=" + encodeURIComponent(note), true);
         xhttp.send();
     }
 }
